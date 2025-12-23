@@ -211,7 +211,7 @@ button, input[type="button"], input[type="submit"] {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 一行三张 */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 120rem;
   margin: 0 auto;
@@ -219,7 +219,6 @@ button, input[type="button"], input[type="submit"] {
   align-items: start;
   margin-bottom: 85px;
 }
-
 
 .grid-item {
   background-color: white;
